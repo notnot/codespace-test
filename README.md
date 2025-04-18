@@ -1,2 +1,3 @@
 # codespace-test
-get familiar with github codespaces
+Getting familiar with github codespaces. Trying out several programming languages.
+
