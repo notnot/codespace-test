@@ -4,15 +4,29 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 )
 
-func hello(howMany int) {
+func pickGreeting() string {
+	greetings := []string{
+		"hello", 
+		"hi", 
+		"hey", 
+		"greetings", 
+		"what's up", 
+		"yo",
+	}
+	// pick a random greeting
+	return greetings[rand.Intn(len(greetings))]
+}
+
+func greet(howMany int) {
 	for i := 0; i < howMany; i++ {
-		fmt.Println("hello")
+		fmt.Println(pickGreeting())
 	}
 }
 
 func main() {
 	fmt.Println("testing go in a github codespace")
-	hello(3)
+	greet(3)
 }
